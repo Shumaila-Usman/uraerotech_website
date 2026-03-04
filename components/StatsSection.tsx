@@ -2,16 +2,16 @@
 
 import { useEffect, useState } from 'react'
 
+const stats = [
+  { label: 'Projects Completed', value: 5000, suffix: '+', key: 'projects' },
+  { label: 'Years Experience', value: 20, suffix: '+', key: 'years' },
+  { label: 'Satisfied Clients', value: 1000, suffix: '+', key: 'clients' },
+  { label: 'Parts in Inventory', value: 50000, suffix: '+', key: 'parts' },
+]
+
 export function StatsSection() {
   const [isVisible, setIsVisible] = useState(false)
   const [counts, setCounts] = useState({ projects: 0, years: 0, clients: 0, parts: 0 })
-
-  const stats = [
-    { label: 'Projects Completed', value: 5000, suffix: '+', key: 'projects' },
-    { label: 'Years Experience', value: 20, suffix: '+', key: 'years' },
-    { label: 'Satisfied Clients', value: 1000, suffix: '+', key: 'clients' },
-    { label: 'Parts in Inventory', value: 50000, suffix: '+', key: 'parts' },
-  ]
 
   useEffect(() => {
     const observer = new IntersectionObserver(

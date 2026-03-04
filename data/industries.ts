@@ -320,3 +320,4 @@ export function getIndustryBySlug(slug: string): Industry | undefined {
   return industries.find((industry) => industry.slug === slug)
 }
 
+

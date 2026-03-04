@@ -52,7 +52,7 @@ export function ServiceContactForm({ serviceName }: ServiceContactFormProps) {
         </div>
         <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
         <p className="text-white/70 mb-4">
-          We've received your inquiry about {serviceName}. Our team will get back to you within 24-48 hours.
+          We&apos;ve received your inquiry about {serviceName}. Our team will get back to you within 24-48 hours.
         </p>
         <button
           onClick={() => setSuccess(false)}
@@ -163,6 +163,7 @@ export function ServiceContactForm({ serviceName }: ServiceContactFormProps) {
     </div>
   )
 }
+
 
 
 

@@ -53,7 +53,7 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Contact Us</h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl">
-              Get in touch with our team. We're here to help with all your aircraft structural repair needs.
+              Get in touch with our team. We&apos;re here to help with all your aircraft structural repair needs.
             </p>
           </div>
         </div>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-4">Thank You!</h3>
                     <p className="text-white/70 mb-6 text-lg">
-                      We've received your message and will get back to you within 24-48 hours.
+                      We&apos;ve received your message and will get back to you within 24-48 hours.
                     </p>
                     <button
                       onClick={() => setSuccess(false)}

@@ -23,14 +23,15 @@ export function ScrollAnimation({
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const element = ref.current
+    if (!element) return
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
           // Disconnect after animation to improve performance
-          if (ref.current) {
-            observer.unobserve(ref.current)
-          }
+          observer.unobserve(element)
         }
       },
       {
@@ -39,14 +40,10 @@ export function ScrollAnimation({
       }
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
+    observer.observe(element)
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
-      }
+      observer.unobserve(element)
     }
   }, [threshold])
 

@@ -97,7 +97,7 @@ export default function SignInPage() {
             </form>
 
             <p className="mt-6 text-center text-white/70 text-sm">
-              Don't have an account?{' '}
+              Don&apos;t have an account?{' '}
               <Link href="/quote" className="text-blue-400 hover:text-blue-300">
                 Request a Quote
               </Link>

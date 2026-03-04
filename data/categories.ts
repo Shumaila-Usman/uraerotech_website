@@ -87,3 +87,4 @@ export function getCategoryBySlug(slug: string): ProductCategory | undefined {
   return productCategories.find((category) => category.slug === slug)
 }
 
+

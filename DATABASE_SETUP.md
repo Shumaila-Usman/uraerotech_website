@@ -81,3 +81,4 @@ After running `npm run db:seed`, you should see:
 - **Connection errors**: Check your `DATABASE_URL` in `.env` file
 - **Prisma errors**: Make sure you've run `npx prisma generate` first
 
+
